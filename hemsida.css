@@ -23,7 +23,7 @@ font-family: 'century gothic', sans-serif; /* skriv stilen i boxen*/
   width: 100%;
   height: auto;
   transition: .4s ease;
-  border-radius: 40px; /* rundar sidorna */
+  border-radius: 25%; /* rundar sidorna */
 }
 
 .box-img:hover{
@@ -124,7 +124,7 @@ font-size: 60px;
   }
 
   .box h5 {
-      font-size: 20px; /* Återställer undertitlens fontstorlek för större skärmar */
+      font-size: 20px; /* Återställer undertitels fontstorlek för större skärmar */
   }
 
   .box p {

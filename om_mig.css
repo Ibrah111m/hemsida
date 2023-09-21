@@ -17,12 +17,12 @@ padding-right: 2vh;
 /* ändringar för text klassen */
 .text{
 text-align: center;
-color: blanchedalmond;
+color: white;
 justify-content: center;
-font-family: cursive;
+font-family: bold;
 font-size: larger;
-backdrop-filter: blur(10px); /*Att det blir blur (suddigt element) i bakgrunden utav text*/
-border-radius: 5px;
+
+border-radius: 50px;
 transition: .3s ease
 }
 /* Element för att elementet text ska hovra */
