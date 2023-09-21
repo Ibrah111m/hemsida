@@ -1,0 +1,139 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url(pexel\ \(kopia\).jpeg) repeat;
+  background-size: 700px;
+}
+.länkar li{
+display: inline;
+
+}
+.box{
+width: 450px; 
+background: rgba(0,0,0,0.4);
+padding: 40px;
+text-align: center;
+margin: auto;
+margin-top: 5%; 
+color: white;
+font-family: 'century gothic', sans-serif; /* skriv stilen i boxen*/
+}
+
+.box-img {
+  width: 100%;
+  height: auto;
+  transition: .4s ease;
+  border-radius: 40px; /* rundar sidorna */
+}
+
+.box-img:hover{
+transform: scale(0.8);
+
+
+}
+
+.box h1{
+font-size: 40px;
+letter-spacing: 4px;
+font-weight: 100;
+
+
+}
+.box h5{
+font-size: 20px;
+letter-spacing: 3px;
+font-weight: 100;
+font-family: cursive;
+}
+.box p{
+text-align: justify;
+font-family: cursive;
+font-size: large;
+}
+ul{
+  margin: 0;
+  padding:0
+}
+.box li{
+display: inline-block;
+margin: 19px;
+list-style: none;
+}
+.box li a{
+color: white;
+text-decoration: none;
+font-size: 60px;
+
+}
+/* Anpassad för telefoner */
+@media screen and (max-width: 480px) {
+  .box {
+      width: 90%; /* Anpassar för mindre skärmar */
+      max-width: none; /* Återställer maxbredden för boxen */
+      padding: 20px; /* Justerar padding för mindre skärmar */
+  }
+
+  .box h1 {
+      font-size: 30px; /* Justerar rubrikens fontstorlek för mindre skärmar */
+  }
+
+  .box h5 {
+      font-size: 16px; /* Justerar undertitlens fontstorlek för mindre skärmar */
+  }
+
+  .box p {
+      font-size: 18px; 
+  }
+
+  .box li a {
+      font-size: 40px; /* Justerar länkarnas fontstorlek för mindre skärmar */
+  }
+}
+
+/* Anpassning för iPads */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .box {
+      width: 70%; /* Anpassar bredden på boxen för iPads */
+  }
+
+  .box h1 {
+      font-size: 36px; /* Justerar rubrikens fontstorlek för iPads */
+  }
+
+  .box h5 {
+      font-size: 18px; /* Justerar undertitlens fontstorlek för iPads */
+  }
+
+  .box p {
+      font-size: 20px; /* Justerar textens fontstorlek för iPads */
+  }
+
+  .box li a {
+      font-size: 48px; /* Justerar länkarnas fontstorlek för iPads */
+  }
+}
+
+/* Anpassning för datorer */
+@media screen and (min-width: 1025px) {
+  .box {
+      width: 450px; /* Återställer bredden på boxen för större skärmar */
+  }
+
+  .box h1 {
+      font-size: 40px; /* Återställer rubrikens fontstorlek för större skärmar */
+  }
+
+  .box h5 {
+      font-size: 20px; /* Återställer undertitlens fontstorlek för större skärmar */
+  }
+
+  .box p {
+      font-size: large; /* Återställer textens fontstorlek för större skärmar */
+  }
+
+  .box li a {
+      font-size: 60px; /* Återställer länkarnas fontstorlek för större skärmar */
+  }
+}
+
+
