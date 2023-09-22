@@ -4,44 +4,92 @@ body{
     background-repeat: repeat;
     background-size: cover;
     background-position: center;
-    }
+    font-family: 'Times New Roman', Times, serif; /* för text family */
+}
 
 .bakgrund {
-position: relative; /* Hur den är placerad, ifall den är centrerad etc */
-padding-top: 35vh; 
-padding-left: 2vh;
-padding-right: 2vh;
-
+    position: relative;
+    padding-top: 35vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
 }
 
-/* ändringar för text klassen */
+/* Ändringar för text klassen */
 .text{
-text-align: center;
-color: white;
-justify-content: center;
-font-family: bold;
-font-size: larger;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Element för text skugga */
+    
+}
 
-border-radius: 50px;
-transition: .3s ease
-}
-/* Element för att elementet text ska hovra */
+
 .text:hover{
-    transform: scale(1.2);
+    transform: none; 
 }
+
+/* ändringar för tillbaka elementet */
+.tillbaka {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white; 
+    border: none; /* Ingen border */
+    padding: 10px 20px; 
+    border-radius: 20px;
+    font-size: 16px; /* Textstorlek */
+    box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+}
+
+.tillbaka:hover {
+    background-color: gray;
+    
+}
+
+/* Media query för telefoner */
 @media screen and (max-width: 600px){
     body {
         background-size: auto; 
     }
 
     .bakgrund {
-        padding-top: 35vh; /* Anpassning på padding */
+        padding-top: 35vh;
         padding-left: 1vh;
         padding-right: 1vh;
     }
 
     .text {
-        font-size: x-small; /* Apassning på text-storlek*/
+        font-size: 0.9em; /* element för att göra texten större för mindre skärmar */
     }
 }
 
+/* Media query för iPads  */
+@media screen and (min-width: 601px) and (max-width: 1024px){
+    body {
+        font-size: 20px; 
+    }
+
+    .bakgrund {
+        padding-top: 30vh;
+    }
+
+    .text {
+        font-size: medium;
+    }
+}
+
+/* Media query för datorer */
+@media screen and (min-width: 1025px){
+    body {
+        font-size: 24px; 
+    }
+
+    .bakgrund {
+        padding-top: 40vh;
+    }
+
+    .text {
+        font-size: large;
+    }
+}

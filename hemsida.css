@@ -23,7 +23,7 @@ font-family: 'century gothic', sans-serif; /* skriv stilen i boxen*/
   width: 100%;
   height: auto;
   transition: .4s ease;
-  border-radius: 25%; /* rundar sidorna */
+  border-radius: 15%; /* rundar av sidorna på bilden */
 }
 
 .box-img:hover{
@@ -43,11 +43,11 @@ font-weight: 100;
 font-size: 20px;
 letter-spacing: 3px;
 font-weight: 100;
-font-family: cursive;
+font-family: 'Times New Roman', Times, serif
 }
 .box p{
 text-align: justify;
-font-family: cursive;
+font-family: sans-serif;
 font-size: large;
 }
 ul{
@@ -65,20 +65,20 @@ text-decoration: none;
 font-size: 60px;
 
 }
-/* Anpassad för telefoner */
+/* Media query för telefon */
 @media screen and (max-width: 480px) {
   .box {
-      width: 90%; /* Anpassar för mindre skärmar */
-      max-width: none; /* Återställer maxbredden för boxen */
-      padding: 20px; /* Justerar padding för mindre skärmar */
+      width: 90%; 
+      max-width: none; 
+      padding: 20px; 
   }
 
   .box h1 {
-      font-size: 30px; /* Justerar rubrikens fontstorlek för mindre skärmar */
+      font-size: 30px; 
   }
 
   .box h5 {
-      font-size: 16px; /* Justerar undertitlens fontstorlek för mindre skärmar */
+      font-size: 16px; 
   }
 
   .box p {
@@ -86,53 +86,53 @@ font-size: 60px;
   }
 
   .box li a {
-      font-size: 40px; /* Justerar länkarnas fontstorlek för mindre skärmar */
+      font-size: 40px; 
   }
 }
 
-/* Anpassning för iPads */
+/* Media query för ipad */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .box {
-      width: 70%; /* Anpassar bredden på boxen för iPads */
+      width: 70%; 
   }
 
   .box h1 {
-      font-size: 36px; /* Justerar rubrikens fontstorlek för iPads */
+      font-size: 36px; 
   }
 
   .box h5 {
-      font-size: 18px; /* Justerar undertitlens fontstorlek för iPads */
+      font-size: 18px; 
   }
 
   .box p {
-      font-size: 20px; /* Justerar textens fontstorlek för iPads */
+      font-size: 20px; 
   }
 
   .box li a {
-      font-size: 48px; /* Justerar länkarnas fontstorlek för iPads */
+      font-size: 48px; 
   }
 }
 
-/* Anpassning för datorer */
+/* Media query för datorer */
 @media screen and (min-width: 1025px) {
   .box {
       width: 450px; /* Återställer bredden på boxen för större skärmar */
   }
 
   .box h1 {
-      font-size: 40px; /* Återställer rubrikens fontstorlek för större skärmar */
+      font-size: 40px; 
   }
 
   .box h5 {
-      font-size: 20px; /* Återställer undertitels fontstorlek för större skärmar */
+      font-size: 20px; /
   }
 
   .box p {
-      font-size: large; /* Återställer textens fontstorlek för större skärmar */
+      font-size: large; /* Återställer för större skärmar */
   }
 
   .box li a {
-      font-size: 60px; /* Återställer länkarnas fontstorlek för större skärmar */
+      font-size: 60px; 
   }
 }
 
